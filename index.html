@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>E-commerce product page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="menu">
+        <!-- Bootstrap OffCanvas -->
+        <a id="menu" data-bs-toggle="offcanvas" href="#offcanvasExample">
+          <img src="images/icon-menu.svg">
+        </a>
+        <div class="offcanvas offcanvas-start" id="offcanvasExample">
+          <div class="offcanvas-header">
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <ul id="offcanvas-ul">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <a href="index.html"><img src="images/logo.svg"></a>
+        <ul class="menu-ul">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="cart-profile">
+        <!-- Dropdown -->
+        <div class="dropdown-center">
+          <button class="position-relative" data-bs-toggle="dropdown">
+            <img src="images/icon-cart.svg">
+            <!-- Badge -->
+            <span id="badge" class="position-absolute translate-middle badge rounded-pill not-active">
+              0
+            </span>
+          </button>
+          <div class="dropdown-menu mt-3">
+            <div class="header">Cart</div>
+
+            <div class="empty-cart">Your cart is empty.</div>
+
+            <div class="content disapear">
+              <div class="cart-product">
+                <img id="thumbnail" src="images/image-product-1-thumbnail.jpg" width="50px">
+                <div class="cart-prod-inf">
+                  <span>Fall Limited Edition Sneakers</span>
+                  <span>$125.00 x <span id="quantity">0</span> <span id="total">$00.00</span></span>
+                </div>
+                <img id="delete" src="images/icon-delete.svg">
+              </div>
+              <button>Checkout</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="profile"></div>
+      </div>
+    </header>
+
+    <section>
+
+      <!-- Bootstrap Carousel Slide -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/image-product-1.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image-product-2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image-product-3.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image-product-4.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <div id="prev"><img src="images/icon-previous.svg"></div>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+          <div id="next"><img src="images/icon-next.svg"></div>
+        </button>
+      </div>
+
+      <div class="product-view">
+        <div class="product-image" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="images/image-product-1.jpg">
+        </div>
+        <div class="page-thumbs product-thumbnails">
+          <img class="active" src="images/image-product-1.jpg">
+          <img src="images/image-product-2.jpg">
+          <img src="images/image-product-3.jpg">
+          <img src="images/image-product-4.jpg">
+        </div>
+      </div>
+
+      <div class="product-content">
+        <h6>SNEAKER COMPANY</h6>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they'll withstand everything the weather can offer.
+        </p>
+        <div class="prices">
+          <div class="discounts">
+            <span class="discount-price">$125.00</span>
+            <span class="discount-percent">50%</span>
+          </div>
+          <span class="original-price">$250.00</span>
+        </div>
+        <div class="actions">
+          <div class="quantity">
+            <div class="plus-minus minus">
+              <img src="images/icon-minus.svg">
+            </div>
+            <span>0</span>
+            <div class="plus-minus plus">
+              <img src="images/icon-plus.svg">
+            </div>
+          </div>
+          <div class="add-to-cart">
+            <img src="images/icon-cart.svg">
+            <span>Add to cart</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
