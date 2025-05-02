@@ -2,7 +2,7 @@
 
 ![Desktop Preview](design/desktop-preview.jpg)
 
-A responsive and interactive E-commerce product page built using **HTML**, **CSS**, and **JavaScript**. It features a lightbox image gallery and basic cart functionality.
+A responsive and interactive E-commerce product page built with **HTML**, **CSS**, and **JavaScript**. This project features a sleek layout with a lightbox image gallery for enhanced product viewing and includes basic cart functionality that allows users to add, update, and remove items. The design is optimized for both desktop and mobile, offering a smooth and engaging shopping experience for users.
 
 ---
 
