@@ -35,6 +35,8 @@ A responsive and interactive E-commerce product page built with **HTML**, **CSS*
 
 ## 📱 Mobile Design
 
-<img src="design/mobile-design.jpg" alt="Mobile Design" style="width:33%;">
-<img src="design/mobile-design-basket-filled.jpg" alt="Mobile Cart Design" style="width:33%;">
-<img src="design/mobile-menu.jpg" alt="Mobile Menu Design" style="width:33%;">
+<p>
+   <img src="design/mobile-design.jpg" alt="Mobile Design" style="width:32%;">
+   <img src="design/mobile-design-basket-filled.jpg" alt="Mobile Cart Design" style="width:32%;">
+   <img src="design/mobile-menu.jpg" alt="Mobile Menu Design" style="width:32%;">
+</p>
